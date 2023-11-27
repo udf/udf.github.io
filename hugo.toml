@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Sam's blog"
+theme = 'blist'
+
+[params]
+  darkModeToggle = true
+
+[params.homepage.social]
+  title = "Links"
+
+  [[params.homepage.social.icons]]
+    website = "github"
+    url = "https://github.com/udf"
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
