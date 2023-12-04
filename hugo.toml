@@ -1,7 +1,29 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.withsam.org'
 languageCode = 'en-us'
 title = "Sam's blog"
 theme = 'blist'
+
+[languages]
+  [languages.en]
+    contentDir = "content"
+    weight = 1
+    languageName = "English"
+    [languages.en.params]
+      introTitle = "Hey! I'm Sam"
+      introSubtitle = "24 y/o developer who enjoys cyber security, blogging and strategy games"
+      introPhoto = "/picture.jpg"
+      logo = "/logo.png"
+      reading_speed = 114
+
+    [[languages.en.menu.main]]
+        name = "About"
+        url = "about/"
+        weight = 2
+
+    [[languages.en.menu.main]]
+        name = "Tags"
+        url = "tags"
+        weight = 3
 
 [params]
   darkModeToggle = true
@@ -22,6 +44,6 @@ theme = 'blist'
 
 [markup]
   [markup.highlight]
-    style = "dracula"
+    style = "monokai"
   [markup.goldmark.renderer]
     unsafe = true
