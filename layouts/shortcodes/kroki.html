@@ -3,10 +3,10 @@
 {{- $url := "https://kroki.io/" -}}
 {{- $outputFormat := "svg" -}}
 {{- $supportedTypes := slice
-  "actdiag" "blockdiag" "bpmn" "bytefield" "ditaa" "d2" "dbml" "erd" "graphviz"
-  "mermaid" "nomnoml" "nwdiag" "packetdiag" "pikchr" "plantuml" "rackdiag"
-  "seqdiag" "structurizr" "svgbob" "umlet" "vega" "vegalite" "wavedrom"
-  "wireviz"
+  "actdiag" "blockdiag" "bpmn" "bytefield" "ditaa" "d2" "dbml" "erd" "excalidraw"
+  "graphviz" "mermaid" "nomnoml" "nwdiag" "packetdiag" "pikchr" "plantuml"
+  "rackdiag" "seqdiag" "structurizr" "svgbob" "umlet" "vega" "vegalite"
+  "wavedrom" "wireviz"
 }}
 {{- $typesDelimited := delimit $supportedTypes ", " ", and " -}}
 {{- $diagramSource := "" -}}
@@ -38,7 +38,7 @@
         {{- with .Err -}}
           {{- errorf "The %q shortcode was unable to get the remote diagram. Details: %s. See %s" $.Name . $.Position -}}
         {{- else -}}
-          <img src="{{ .RelPermalink }}" width="100%" height="auto" alt="diagram">
+          <object type="image/svg+xml" data="{{ .RelPermalink }}" width="100%" height="auto" alt="diagram" class="diagram-kroki"></object>
         {{- end -}}
       {{- else -}}
         {{- errorf "The %q shortcode was unable to get the remote diagram. See %s" $.Name $.Position -}}
