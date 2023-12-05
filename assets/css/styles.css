@@ -16,6 +16,10 @@ figcaption>h4 {
   margin-top: 0px !important;
 }
 
+#introPhoto {
+  max-height: 256px;
+}
+
 @layer components {
   details.toc[open] summary ~ * {
     animation: slideUp 0.25s ease-in-out;
