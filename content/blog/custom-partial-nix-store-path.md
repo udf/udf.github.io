@@ -38,7 +38,6 @@ Nice, so even attributes that don't actually affect the package at all will chan
 So all we have to do is add a attribute with a different value each time and see if the resulting hash matches our criteria.
 
 Another idea is to exploit a flaw in the now deprecated SHA1 to speed this up. However all I could find was how to do a [Length extension attack](https://en.wikipedia.org/wiki/Length_extension_attack) or a [Collision attack](https://en.wikipedia.org/wiki/Collision_attack) - which lets us find messages to get a certain hash - we want the other way around, a [Preimage attack](https://en.wikipedia.org/wiki/Preimage_attack). So we're stuck with brute-forcing.
-{: .notice--primary}
 
 ## Probability
 Assuming that SHA1 is evenly distributed, we can calculate how rare a hash with a certain number of fixed parts is. Since the paths are using base32, each character contains 5 bits of information (2<sup>5</sup> = 32). For example, let's say I want a hash that starts with "sam", that means there's a 1 in 2<sup>5 * 3</sup> = 32768 chance that our hash satisfies the condition. Of course more characters will exponentially increase the computation time.
