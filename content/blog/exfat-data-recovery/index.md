@@ -192,7 +192,7 @@ There are two results because the first of them is the app's data, while the sec
 (draw-box "\"PCSB00395\" (Final Fantasy X)" [:box-below {:span 16}])
 ```
 
-## The Numbers Mason, What Do They Mean?!
+## The numbers mason, what do they mean?!
 Stream extension entries don't point directly at an address, rather they point at a specific block number. To turn this into an address, you simply take the size of the header and add *n* block lengths:
 
 {{< kroki type="excalidraw" file="block-indexing.excalidraw" />}}
@@ -229,7 +229,7 @@ Surprisingly, the filename `data0000.bin` is only shared with Gravity Rush (anot
 The first instance is ~91.8 GiB from the start, which is far off the estimated value,
 while the second one is at ~166.7 GiB, as predicted. Further investigation shows that the first instance matches my Gravity Rush save directory exactly.
 
-The block containing the second instance it at address `0x29B2C60000`,
+The block containing the second instance is at address `0x29B2C60000`,
 so if I assume that it's block `5463310`, then the offset would be:
 ```python
 offset = address - block_no * block_size
