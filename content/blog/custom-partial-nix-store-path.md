@@ -1,5 +1,5 @@
 ---
-layout: single
+author: "Sam"
 title: "Brute forcing NixOS store paths for no particular reason"
 description: "This is the second dumbest thing I've ever done."
 date: 2022-02-07
