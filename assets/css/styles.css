@@ -20,6 +20,10 @@ figcaption>h4 {
   max-height: 256px;
 }
 
+.code-inline {
+  background-color: #272822;
+}
+
 @layer components {
   details.toc[open] summary ~ * {
     animation: slideUp 0.25s ease-in-out;
