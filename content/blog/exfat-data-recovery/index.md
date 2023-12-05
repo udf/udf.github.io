@@ -257,7 +257,7 @@ Using [Fox-IT\'s dissect.fat module](https://github.com/fox-it/dissect.fat),
 I wrote a quick script to recursively extract a directory starting from the specified sector.
 It also includes some utility functions that I will make use of later.
 
-You can find it at this Gist: [TODO: gist link]
+You can find it at this Gist: https://gist.github.com/udf/62c24984b89de206fc7ae725cbb9b738#file-extract-py
 
 ```text
 % python extract.py
@@ -679,7 +679,7 @@ Merkle tree is invalid in file PCSB01016/5463311.64k
 I guess the last thumbnail is fragmented, so I will have to brute force finding its second block.
 Unfortunately, `psvpfsparser` uses the first file it finds with the correct hash, so I will have to do this externally. Luckily python makes it trivial:
 
-[TODO: gist link]
+https://gist.github.com/udf/62c24984b89de206fc7ae725cbb9b738#file-try_find-py
 
 What this does is try candidate sector as the second half of the file, until the merkle tree error doesn't show up.
 The successful decryption shows that the second part of the thumbnail at `5463311` was in block `5463475`:
