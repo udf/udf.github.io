@@ -446,7 +446,7 @@ Match not found: 120776a8
 
 Now it's looking for a file that matches a certain hash.
 While I could write my own code to search for a block that matches the hash,
-Sony uses a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree),as well as a custom hash function,
+Sony uses a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree), as well as a custom hash function,
 which complicates things, so I'll stick to letting `psvpfsparser` do the verification for me.
 
 

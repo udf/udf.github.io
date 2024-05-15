@@ -41,7 +41,7 @@ Can we use a hashbang in our script and simply do
 
 Yes, but not like that. **Our script does not end up executable** and the functionality to place a file into the Nix store when converting a path to a string doesn't take any options. See [stackoverflow: When does a nix path type make it into the nix store and when not?](https://stackoverflow.com/a/43850372) for details.
 
-So how does the systemd module turn our first script into a executable file? [With `pkgs.writeTextFile`](https://github.com/NixOS/nixpkgs/blob/c28fb0a4671ff2715c1922719797615945e5b6a0/nixos/modules/system/boot/systemd.nix#L210):
+So how does the systemd module turn our first script into a executable file? [With pkgs.writeTextFile](https://github.com/NixOS/nixpkgs/blob/c28fb0a4671ff2715c1922719797615945e5b6a0/nixos/modules/system/boot/systemd.nix#L210):
 ```nix
   makeJobScript = name: text:
     let
