@@ -24,6 +24,10 @@ figcaption>h4 {
   background-color: #272822;
 }
 
+article.dark\:prose-dark {
+  @apply dark:text-gray-300;
+}
+
 @layer components {
   details.toc[open] summary ~ * {
     animation: slideUp 0.25s ease-in-out;
