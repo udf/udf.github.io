@@ -16,6 +16,11 @@ theme = 'blist'
       reading_speed = 114
 
     [[languages.en.menu.main]]
+        name = "Posts"
+        url = "blog"
+        weight = 1
+
+    [[languages.en.menu.main]]
         name = "About"
         url = "about/"
         weight = 2
