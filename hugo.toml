@@ -33,6 +33,17 @@ theme = 'blist'
 [params]
   darkModeToggle = true
 
+  enableSearch = true
+  searchKeys = [
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link",
+    "author"
+  ]
+
 [params.homepage.social]
   title = "Links"
 
