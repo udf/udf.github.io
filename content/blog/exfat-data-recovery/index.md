@@ -4,7 +4,7 @@ title: "exFAT data recovery"
 date: 2023-04-15
 description: "Recovering data from a damaged exFAT filesystem"
 tags: ["misc", "data recovery"]
-thumbnail: /vitarec.jpg
+thumbnail: cover.jpg
 ---
 
 ## A simple mistake
@@ -51,11 +51,11 @@ The size of the blocks is at the beginning of the drive, along with other import
 
 I found a metadata block in [ImHex](https://github.com/WerWolv/ImHex/), after it ends there are a bunch of zeros, and the next block looks like the start of a PNG file:
 
-{{< figure src="/vitarec-metadata.png" title="A metadata block" >}}
+{{< figure src="metadata.png" title="A metadata block" >}}
 
-{{< figure src="/vitarec-end-of-metadata.png" title="The end of the metadata block's data" >}}
+{{< figure src="end-of-metadata.png" title="The end of the metadata block's data" >}}
 
-{{< figure src="/vitarec-a-wild-png.png" title="The start of the next block" >}}
+{{< figure src="a-wild-png.png" title="The start of the next block" >}}
 
 This lets me calculate the block size of the filesystem:  
 `0x16ECE78000` - `0x16ECE70000` = `0x8000` (32 KiB)
@@ -216,7 +216,7 @@ offset which will let me know the address of any block number.
 
 I ran the game and made a new save (after watching all the unskippable cutscenes again) to get a look at the the file structure:
 
-{{< figure src="/vitarec-ffx-saves.png" title="FFX saves (directories are blue, files are green)" >}}
+{{< figure src="ffx-saves.png" title="FFX saves (directories are blue, files are green)" >}}
 
 Surprisingly, the filename `data0000.bin` is only shared with Gravity Rush (another [PhyreEngine](https://en.wikipedia.org/wiki/PhyreEngine) game). So I repeated the same file name search as before:
 
@@ -297,7 +297,7 @@ I guess that the file was fragmented when part of it was changed. So I combined 
 
 I then threw the recovered files onto my Vita and:
 
-{{< figure src="/vitarec-ffx.png" title="It works!" >}}
+{{< figure src="ffx.png" title="It works!" >}}
 
 (I got insanely lucky)
 
@@ -576,7 +576,7 @@ with open('unknown.txt', 'w') as f:
 {{< /details >}}
 
 I plotted the blocks to see what the candidates look like:
-{{< figure src="/vitarec-plot-unknown.png" title="Each pixel is a block, green ones are not in my backups" >}}
+{{< figure src="plot-unknown.png" title="Each pixel is a block, green ones are not in my backups" >}}
 
 Out of the 7806338 blocks:
 - 4866578 are unique **(62.34%)**
@@ -724,4 +724,4 @@ I don't know what the name of each file should be, so I will just have to guess:
 5463477.32k -> SAVE255.DAT
 ```
 
-{{< figure src="/vitarec-cold-steel.png" title="Success? The fragmented thumbnail doesn't seem to decrypt correctly, but the save does." >}}
+{{< figure src="cold-steel.png" title="Success? The fragmented thumbnail doesn't seem to decrypt correctly, but the save does." >}}

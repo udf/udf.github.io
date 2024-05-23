@@ -4,7 +4,7 @@ title: "Making user IDs deterministic on NixOS"
 description: "Now with $100% more containers!"
 date: 2021-07-18
 tags: ["nixos", "containerisation"]
-thumbnail: /kuroneko-deterministic.png
+thumbnail: cover.png
 ---
 
 ## Why?

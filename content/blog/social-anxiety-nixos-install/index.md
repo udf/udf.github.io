@@ -4,7 +4,7 @@ title: "Setting up NixOS on a dedicated server"
 description: "No human interaction needed."
 date: 2021-02-09
 tags: ["nixos", "devops"]
-thumbnail: /feed-me-a-server.jpg
+thumbnail: cover.jpg
 ---
 
 ## Preamble
@@ -71,6 +71,6 @@ So what can we do? [Build our own ISO](https://nixos.wiki/wiki/Creating_a_NixOS_
 And that's about it, so I crossed my fingers and rebooted the system.
 
 ...and it worked!  
-{{< figure src="/nixos-iso-hanzo-boot.jpg" title="You have no idea how happy I am" >}}
+{{< figure src="nixos-iso-hanzo-boot.jpg" title="You have no idea how happy I am" >}}
 
 That's about the end of everything that [the excellent NixOS wiki](https://nixos.wiki/wiki/NixOS_Installation_Guide) can't explain.

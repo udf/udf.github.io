@@ -4,7 +4,7 @@ title: "Generating a custom Syncthing device ID"
 description: "Et tu, Brute-force?"
 date: 2024-05-22
 tags: ["syncthing", "openssl"]
-thumbnail: /syncthing-device-id.jpg
+thumbnail: cover.jpg
 ---
 
 ## What's a Syncthing?
@@ -38,7 +38,7 @@ It is in the format `xxxxxxx-xxxxxxA-xxxxxxx-xxxxxxB-xxxxxxx-xxxxxxC-xxxxxxx-xxx
 where `A`, `B`, `C`, and `D` are check digits using [a slightly altered version of the Luhn mod N algorithm](https://forum.syncthing.net/t/v0-9-0-new-node-id-format/478/5), and the `x`s are characters from the hash represented in base32.
 
 Each group of the ID is 7 characters long, and the first group is displayed in the GUI in the identification section:
-{{< figure src="/syncthing-device-gui.png" title="A device in Syncthing's GUI" >}}
+{{< figure src="device-gui.png" title="A device in Syncthing's GUI" >}}
 
 
 ## A dumb idea
@@ -279,4 +279,4 @@ $ openssl x509 -inform DER -in 2327237.der -out cert.pem
 ```
 
 And after replacing the `cert.pem` and `key.pem` files and restarting Syncthing (as well as re-accepting every share on every device):
-{{< figure src="/syncthing-device-alice.jpg" title="The custom device ID now matches the device name, how chic!" >}}
+{{< figure src="device-alice.jpg" title="The custom device ID now matches the device name, how chic!" >}}

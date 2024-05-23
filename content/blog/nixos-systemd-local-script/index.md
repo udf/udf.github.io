@@ -4,7 +4,7 @@ title: "How to run a local script as a systemd service on NixOS"
 description: "No packaging necessary."
 date: 2022-02-07
 tags: ["nixos", "guide"]
-thumbnail: /nixos-local-script-service.jpg
+thumbnail: cover.jpg
 ---
 
 If your script is small and using shell, then your service definition could look like this:

@@ -4,7 +4,7 @@ title: "In-place rebuilding of a docker compose project with systemd"
 description: "Did you just restart prod again?"
 date: 2024-05-15
 tags: ["containerisation", "docker", "systemd"]
-thumbnail: /docker-systemd.jpg
+thumbnail: cover.jpg
 ---
 
 ## The usual approach

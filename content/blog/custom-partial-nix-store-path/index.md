@@ -4,7 +4,7 @@ title: "Brute forcing NixOS store paths for no particular reason"
 description: "This is the second dumbest thing I've ever done."
 date: 2022-02-07
 tags: ["nixos", "memes"]
-thumbnail: /taiga-this-is-dumb-thumb.jpg
+thumbnail: cover.jpg
 ---
 
 ## The Nix store

@@ -4,7 +4,7 @@ title: "NixOS - Automatically restarting a systemd unit when a local config file
 description: "A simple fix for a simple problem."
 date: 2022-03-15
 tags: ["nixos", "guide"]
-thumbnail: /nixos-auto-restart-service.jpg
+thumbnail: cover.jpg
 ---
 
 ## The Setup
