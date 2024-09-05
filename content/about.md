@@ -17,12 +17,14 @@ Welcome to my blog.
 
 <br/><br/><br/><br/><br/><br/>↓<br/><br/><br/><br/><br/><br/>
 
-### I'm a software developer and hardware enthusiast.  
-I love solving problems, strategy games, and making cool things.
+## I'm a software developer and hardware enthusiast.  
+### I'm a lover of all things technology, an open source advocate, and volunteer in many communities.  
+
+I enjoy solving problems, strategy/puzzle games, and making cool things.
 
 <br/><br/><br/><br/><br/><br/>↓<br/><br/><br/><br/><br/><br/>
 
-### Most of my experience is in mobile & web development
+### Most of my experience is in mobile & web development.
 Professionally I have around 3 years of work experience - mainly in react native development.  
 Outside of work I love learning and making stuff to make my life easier.
 
@@ -57,6 +59,8 @@ A recreation of the WeThinkCode_ campus in a custom raycasting engine. Built in 
 
 {{< vidfig title="This page!" src="/showcase-about-illusion.mp4" href="https://github.com/udf/udf.github.io/blob/master/assets/js/vapourwave.js" >}}
 The animated background on this page was made with Three.js! It works by utilising some clever maths to create the illusion of an infinitely scrolling digital landscape.
+
+[Originally based on code by Maxime Heckel](https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/).
 {{< /vidfig >}}
 
 <br/><br/><br/><br/><br/><br/>↓<br/><br/><br/><br/><br/><br/>
