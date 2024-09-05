@@ -6,7 +6,6 @@ import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectio
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { RGBShiftShader } from "three/examples/jsm/shaders/RGBShiftShader.js";
 
-// toggle-dark-mode
 async function main() {
   const canvas = document.querySelector('canvas.webgl');
 
