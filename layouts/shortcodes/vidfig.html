@@ -1,0 +1,12 @@
+<figure>
+  <a href="{{ .Get "href" }}">
+    <h3>{{ .Get "title" | markdownify }}</h3>
+  </a>
+  <video controls>
+    <source src="{{ .Get "src" }}" />
+  </video>
+  <p>
+    {{ .Inner | markdownify }}
+  </p>
+
+</figure>
