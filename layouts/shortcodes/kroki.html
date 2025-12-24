@@ -34,10 +34,10 @@
         "method" "post"
         "body" ($kroki | jsonify)
       -}}
-      {{- with resources.GetRemote $url $opts -}}
+      {{- with try (resources.GetRemote $url $opts) -}}
         {{- with .Err -}}
           {{- errorf "The %q shortcode was unable to get the remote diagram. Details: %s. See %s" $.Name . $.Position -}}
-        {{- else -}}
+        {{- else with .Value -}}
           <object type="image/svg+xml" data="{{ .RelPermalink }}" width="100%" height="auto" alt="diagram" class="diagram-kroki"></object>
         {{- end -}}
       {{- else -}}
