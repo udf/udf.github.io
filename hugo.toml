@@ -2,6 +2,7 @@ baseURL = 'https://blog.withsam.org'
 languageCode = 'en-us'
 title = "Sam's blog"
 theme = 'blist'
+buildFuture = true
 
 [languages]
   [languages.en]
