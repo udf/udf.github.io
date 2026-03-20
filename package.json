@@ -27,6 +27,8 @@
     "not dead"
   ],
   "dependencies": {
+    "prettier": "^3.8.1",
+    "prettier-plugin-go-template": "^0.0.15",
     "three": "^0.168.0"
   }
 }
