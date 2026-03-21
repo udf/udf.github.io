@@ -1,0 +1,10 @@
+{{- $date := .Get 0 -}}
+{{- $parsed := time.AsTime $date -}}
+{{- $day := $parsed.Day -}}
+{{- $suffix := "th" -}}
+{{- if in (slice 1 21 31) $day }}{{ $suffix = "st" }}{{ end }}
+{{- if in (slice 2 22) $day }}{{ $suffix = "nd" }}{{ end }}
+{{- if in (slice 3 23) $day }}{{ $suffix = "rd" }}{{ end }}
+{{- $monthYear := $parsed.Format "January 2006" -}}
+{{- $html := printf "## %d%s %s" $day $suffix $monthYear -}}
+{{ $html | markdownify }}
