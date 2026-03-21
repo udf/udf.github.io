@@ -5,66 +5,82 @@ theme = 'blist'
 buildFuture = true
 
 [languages]
-  [languages.en]
-    contentDir = "content"
-    weight = 1
-    languageName = "English"
-    [languages.en.params]
-      introTitle = "Hey! I'm Sam"
-      introSubtitle = "24 y/o developer who enjoys cyber security, blogging and strategy games"
-      introPhoto = "/picture.jpg"
-      logo = "/logo.png"
-      reading_speed = 114
+[languages.en]
+contentDir = "content"
+weight = 1
+languageName = "English"
+[languages.en.params]
+introTitle = "Hey! I'm Sam"
+introSubtitle = "24 y/o developer who enjoys cyber security, blogging and strategy games"
+introPhoto = "/picture.jpg"
+logo = "/logo.png"
+reading_speed = 114
 
-    [[languages.en.menu.main]]
-        name = "Posts"
-        url = "blog"
-        weight = 1
+[[languages.en.menu.main]]
+name = "Posts"
+url = "blog"
+weight = 1
 
-    [[languages.en.menu.main]]
-        name = "About"
-        url = "about/"
-        weight = 2
+[[languages.en.menu.main]]
+name = "About"
+url = "about/"
+weight = 2
 
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags"
+weight = 3
 
 [params]
-  darkModeToggle = true
+darkModeToggle = true
 
-  enableSearch = true
-  searchKeys = [
-    "tags",
-    "date",
-    "categories",
-    "summary",
-    "content",
-    "link",
-    "author"
-  ]
+enableSearch = true
+searchKeys = [
+  "tags",
+  "date",
+  "categories",
+  "summary",
+  "content",
+  "link",
+  "author",
+]
 
 [params.homepage.social]
-  title = "Links"
+title = "Links"
 
-  [[params.homepage.social.icons]]
-    website = "github"
-    url = "https://github.com/udf"
+[[params.homepage.social.icons]]
+website = "dreamcatcher"
+url = "/blog/memoriae-indefinitus/"
+
+[[params.homepage.social.icons]]
+website = "youtube"
+url = "https://www.youtube.com/@samsamsamsamsamsamsam"
+
+[[params.homepage.social.icons]]
+website = "github"
+url = "https://github.com/udf"
+
+[[params.homepage.social.icons]]
+website = "telegram"
+url = "https://t.me/KatewAstaken"
+
+[[params.homepage.social.icons]]
+website = "email"
+url = "samsmailforwork@gmail.com"
 
 [[menu.main]]
-  name = "About"
-  url = "/about"
+name = "About"
+url = "/about"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [markup]
-  [markup.highlight]
-    style = "monokai"
-  [markup.goldmark.renderer]
-    unsafe = true
+[markup.highlight]
+style = "monokai"
+[markup.goldmark.renderer]
+unsafe = true
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'

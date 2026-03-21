@@ -1,0 +1,16 @@
+{{- $ctx := . -}}
+{{- $srcPath := .Get 0 -}}
+{{- $sectionDir := printf "/sections/%s" $srcPath -}}
+{{ with .Site.GetPage $sectionDir }}
+  {{ range $i, $p := .Pages }}
+    {{ if ne $i 0 }}
+      <hr />
+    {{ end }}
+    {{ if .Params.fnheader }}
+      {{ $header := printf `{{< %s "%s" >}}` .Params.fnheader .File.BaseFileName
+      }}
+      {{ $header | .RenderString }}
+    {{ end }}
+    {{ .Content }}
+  {{ end }}
+{{ end }}
