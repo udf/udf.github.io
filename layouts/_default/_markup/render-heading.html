@@ -1,0 +1,5 @@
+<h{{ .Level }} id="{{ .Anchor }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
+  <a href="#{{ .Anchor }}" class="hlink">
+    {{ .Text }}
+  </a>
+</h{{ .Level }}>
