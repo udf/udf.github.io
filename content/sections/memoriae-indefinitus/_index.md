@@ -1,0 +1,5 @@
+---
+cascade:
+  sitemap:
+    disable: true
+---
