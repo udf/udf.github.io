@@ -36,6 +36,7 @@ article.dark\:prose-dark {
 }
 
 a.hlink {
+  font-weight: 700;
   text-decoration: none;
 }
 
