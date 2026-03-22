@@ -27,6 +27,10 @@ figcaption>h4 {
   max-height: 256px;
 }
 
+#logo {
+  image-rendering: pixelated;
+}
+
 .code-inline {
   background-color: #272822;
 }
