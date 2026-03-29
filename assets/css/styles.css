@@ -13,13 +13,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1
+  z-index: -1;
 }
 
 figcaption {
   margin-top: 0.5em !important;
 }
-figcaption>h4 {
+figcaption > h4 {
   margin-top: 0px !important;
 }
 
@@ -53,6 +53,10 @@ a.hlink:hover::before {
 a.hlink:hover {
   text-decoration: underline;
   position: relative;
+}
+
+table {
+  max-width: fit-content;
 }
 
 @layer components {
