@@ -14,4 +14,4 @@ cat > "$filename" << EOF
 
 EOF
 
-$VISUAL $filename &!
+( $VISUAL $filename ) &!
